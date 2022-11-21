@@ -1,0 +1,5 @@
+{
+    "board": "arduino:samd:mzero_bl",
+    "port": "/dev/tty.usbmodem14101",
+    "sketch": "M0 testing/M0 RFM69HCW Controller.ino"
+}
