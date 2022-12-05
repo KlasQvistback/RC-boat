@@ -1,6 +1,5 @@
 {
-    "board": "adafruit:samd:adafruit_feather_m0",
-    "port": "/dev/tty.usbmodem14101",
-    "sketch": "M0 testing/M0_RFM69HCW_Controller.ino",
-    "configuration": "opt=small,usbstack=arduino,debug=off"
+    "board": "arduino:samd:mzero_bl",
+    "port": "/dev/tty.SLAB_USBtoUART",
+    "sketch": "M0_boat/M0_RFM69HCW_for_boat.ino"
 }
