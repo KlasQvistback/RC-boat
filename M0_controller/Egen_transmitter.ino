@@ -1,7 +1,7 @@
 #include <SPI.h>
 #include <RH_RF69.h>
 #include <RHReliableDatagram.h>
-#define RF69_FREQ 434.0
+#define RF69_FREQ 433.0
 #define DEST_ADDRESS   30
 #define MY_ADDRESS     86
 #define RFM69_CS      8
@@ -54,7 +54,7 @@ void loop(){
    lastReceivedTime = currentTime;
    Serial.println("lost connection");
  }
-  updateDATA();
+  updateData();
   if (rf69_manager.sendtoWait((uint8_t *)&values, sizeof(values), DEST_ADDRESS)) {
    lastReceivedTime = millis();
    uint8_t len = sizeof(values);
@@ -64,10 +64,9 @@ void loop(){
   else {
    Serial.println("Failed to send...");
  }
-
 }
 
-void updateData() {
+void updateData(){
  values.throttle = analogRead(throttle);
  values.throttle = map(values.throttle, 0, 1023, 255, 0);
  Serial.println(values.throttle);

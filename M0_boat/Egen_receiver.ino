@@ -2,7 +2,7 @@
 #include <RH_RF69.h>
 #include <RHReliableDatagram.h>
 #include <Servo.h>
-#define RF69_FREQ 434.0
+#define RF69_FREQ 433.0
 #define MY_ADDRESS     30
 #define DEST_ADDRESS 86
 #define RFM69_CS      8
@@ -21,11 +21,8 @@ unsigned long currentTime = 0;
 
  
 struct dataStruct {
- bool connection_TX;
  int throttle;
  int steering;
- float batteryLevel;
- int RX_BAT_LEDstate;
 } values;
  
 void setup() {

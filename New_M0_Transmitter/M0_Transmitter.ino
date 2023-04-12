@@ -4,7 +4,7 @@
 #define RF69_FREQ 433.0
 #define DEST_ADDRESS   30
 #define MY_ADDRESS     86
-//#if defined(ADAFRUIT_FEATHER_M0)
+//#if defined(ADAFRUIT_FEATHER_M0
 #define RFM69_CS      8
 #define RFM69_INT     3
 #define RFM69_RST     4

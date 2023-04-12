@@ -1,5 +1,5 @@
 {
     "board": "arduino:samd:mzero_bl",
-    "port": "/dev/tty.usbmodem14201",
-    "sketch": "M0_controller/Transmitter_test.ino"
+    "port": "/dev/tty.usbmodem14101",
+    "sketch": "Final_Code_GYARB.ino/Final_Code_GYARB.ino.ino"
 }

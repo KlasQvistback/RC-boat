@@ -72,7 +72,7 @@ void loop() { //LED for not_connected is in setup, green light in loop
  rf69_manager.recvfromAckTimeout((uint8_t *)&values, &len, 1, &from);
  if (values.connection_TX == 0){
    Serial.println("No reply, Waiting...");
-   }
+  }
   
   if (rf69_manager.available()) {
    lastReceivedTime = millis();
