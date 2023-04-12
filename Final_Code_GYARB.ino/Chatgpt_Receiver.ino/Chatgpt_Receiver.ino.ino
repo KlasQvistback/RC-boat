@@ -1,7 +1,7 @@
 #include <SPI.h>
 #include <RH_RF69.h>
 #include <RHReliableDatagram.h>
-#include <Servo.h>
+#include "Servo.h"
 
 #define Transmitter_ADDRESS 86
 #define Receiver_ADDRESS 30
