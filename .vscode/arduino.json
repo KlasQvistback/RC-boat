@@ -1,5 +1,5 @@
 {
     "board": "arduino:samd:mzero_bl",
-    "port": "/dev/tty.SLAB_USBtoUART",
-    "sketch": "M0_boat/M0_RFM69HCW_for_boat.ino"
+    "port": "/dev/tty.usbmodem14201",
+    "sketch": "M0_controller/Transmitter_test.ino"
 }
